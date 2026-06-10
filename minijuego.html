@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia de la Huerta - HuertAr</title>
+    <link rel="stylesheet" href="assets/css/styleminijuego.css" />
+  </head>
+  <body>
+    <main class="quiz-container">
+      <!-- Encabezado del juego -->
+      <header class="quiz-header">
+        <h1>Desafío Huerta</h1>
+        <div id="progress-bar-container">
+          <div id="progress-bar"></div>
+        </div>
+        <p id="question-counter">Pregunta 1 de 3</p>
+      </header>
+
+      <!-- Pantalla de Juego -->
+      <section id="quiz-screen">
+        <h2 id="question-text">¿Cargando pregunta...?</h2>
+        <div id="options-container" class="options-grid">
+          <!-- Las opciones se inyectarán con JavaScript -->
+        </div>
+      </section>
+
+      <!-- Pantalla de Resultados (Oculta al inicio) -->
+      <section id="result-screen" class="hidden">
+        <h2>¡Trivia Terminada!</h2>
+        <p class="score-text">
+          Le embocaste a <span id="correct-answers">0</span> de
+          <span id="total-questions">0</span>.
+        </p>
+        <p id="feedback-message"></p>
+        <button id="btn-restart" class="btn-action">Jugar de nuevo</button>
+      </section>
+    </main>
+
+    <script src="assets/js/minijuego.js"></script>
+  </body>
+</html>
