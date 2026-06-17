@@ -15,7 +15,7 @@
 
     <style>
       body {
-        background-color: #f5f7f4;
+        background-color: #9de479;
       }
 
       header {
@@ -29,6 +29,7 @@
         transition: all 0.3s ease;
         border: none;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
       }
 
       .card:hover {
@@ -43,7 +44,7 @@
 
       footer {
         margin-top: 50px;
-        background-color: #e8f5e9;
+        background-color: #4e8652;
         padding: 20px;
       }
       .estrellas {
@@ -52,10 +53,55 @@
         display: block;
         margin-top: 10px;
       }
+      .navbar .nav-link,
+      .navbar .navbar-brand {
+        color: white !important;
+      }
+      .navbar a {
+        transition: 1s;
+      }
+      .navbar a:hover {
+        transform: scale(1.2);
+        color: #2e7d32;
+      }
     </style>
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg text-info bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">Hogar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Cultivos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minijuego</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tiendas.html">Tiendas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Proximamente</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header class="text-center">
       <div class="container">
         <h1>🌿 Tiendas Botánicas de Formosa</h1>
@@ -94,7 +140,11 @@
                 <option>Sábado 7:30 a.m. - 9:00 p.m.</option>
                 <option>Domingo 7:30 a.m. - 6:00 p.m.</option>
               </select>
-              <span class="estrellas">★★★★★</span>
+              <p>Numero de telefono:-----</p>
+
+              <span class="estrellas"
+                >★★★★⯪<span class="text-black fs-5">(2) reseñas</span></span
+              >
             </div>
           </div>
         </div>
@@ -122,7 +172,15 @@
                 <option>Sábado las 24h</option>
                 <option>Domingo las 24h</option>
               </select>
-              <span class="estrellas">★★★★⯪</span>
+              <p>
+                Numero de Telefono:
+                <a href="tel:+5403704479190" class="text-decoration-none"
+                  >03704479190</a
+                >
+              </p>
+              <span class="estrellas"
+                >★★★★⯪<span class="text-black fs-5">(34) reseñas</span></span
+              >
             </div>
           </div>
         </div>
@@ -150,7 +208,15 @@
                 <option>Sábado 8 a.m.–12 p.m. 6:30–10 p.m.</option>
                 <option>Domingo 8 a.m.–12 p.m.</option>
               </select>
-              <span class="estrellas">★★★★★</span>
+              <p>
+                Numero de telefono:
+                <a href="tel:+5403704288816" class="text-decoration-none"
+                  >03704288816</a
+                >
+              </p>
+              <span class="estrellas"
+                >★★★★⯪<span class="text-black fs-5">(48) reseñas</span></span
+              >
             </div>
           </div>
         </div>
@@ -173,7 +239,16 @@
                 <option>NO DISPONIBLE</option>
                 >
               </select>
-              <span class="estrellas">★★★★★</span>
+              <p>
+                Numero de telefono:
+                <a href="tel:+5403704563446" class="text-decoration-none"
+                  >03704563446</a
+                >
+              </p>
+
+              <span class="estrellas"
+                >★★★★⯪<span class="text-black fs-5">(16) reseñas</span></span
+              >
             </div>
           </div>
         </div>
@@ -201,7 +276,16 @@
                 <option>Sábado las 24h</option>
                 <option>Domingo las 24h</option>
               </select>
-              <span class="estrellas">★★★⯪☆</span>
+              <p>
+                Numero de telefono:
+                <a href="tel:+5403704426488" class="text-decoration-none"
+                  >03704426488</a
+                >
+              </p>
+
+              <span class="estrellas"
+                >★★★★⯪<span class="text-black fs-5">(5) reseñas</span></span
+              >
             </div>
           </div>
         </div>
@@ -229,7 +313,15 @@
                 <option>Sábado 8 a.m.–8 p.m.</option>
                 <option>Domingo 9 a.m.–12:30 p.m.</option>
               </select>
-              <span class="estrellas">★★★★⯪</span>
+              <p>
+                Numero de telefono:
+                <a href="tel:+5403704268293" class="text-decoration-none"
+                  >03704268293</a
+                >
+              </p>
+              <span class="estrellas"
+                >★★★★⯪<span class="text-black fs-5">(82) reseñas</span></span
+              >
             </div>
           </div>
         </div>
@@ -239,6 +331,6 @@
     <footer class="text-center">
       <p class="mb-0">🌱 Guía de viveros y florerías de Formosa</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-```
